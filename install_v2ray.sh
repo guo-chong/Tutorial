@@ -136,6 +136,7 @@ supervisord -c /etc/supervisor/supervisord.conf
 echo "supervisord -c /etc/supervisor/supervisord.conf">>/etc/rc.local
 chmod +x /etc/rc.local
 
+pip install Flask-BasicAuth
 echo "安装成功！
 "
 echo "面板端口：${uport}"
