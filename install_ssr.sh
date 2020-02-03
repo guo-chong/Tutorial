@@ -210,7 +210,7 @@ pre_install(){
     echo -e "Please enter a port for ShadowsocksR [1-65535]"
     #read -p "(Default port: ${dport}):" shadowsocksport
     #[ -z "${shadowsocksport}" ] && shadowsocksport=${dport}
-	shadowsocksport=80
+	shadowsocksport=32293
     expr ${shadowsocksport} + 1 &>/dev/null
     if [ $? -eq 0 ]; then
         if [ ${shadowsocksport} -ge 1 ] && [ ${shadowsocksport} -le 65535 ] && [ ${shadowsocksport:0:1} != 0 ]; then
